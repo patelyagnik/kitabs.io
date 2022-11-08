@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal details</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'montserrat', sans-serif;
+
+        }
+
+        body {
+            /* background: #fec107; */
+            background-image: url("https://m.media-amazon.com/images/I/71u-sJhZIIL._AC_SX425_.jpg");
+            padding: 0px 10px;
+        }
+
+        .personaldetails {
+            max-width: 500px;
+            width: 100%;
+            background: #fff;
+            margin: 60px auto;
+            padding: 30px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #251212;
+        }
+
+        .maincontent {
+            width: 100%;
+        }
+
+        .maincontent .input_field {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .maincontent .input_field label,
+        p {
+            width: 200px;
+            color: #757575;
+            margin-right: 10px;
+            font-size: 14px;
+
+        }
+
+        .maincontent .input_field .input {
+            resize: none;
+            width: 100%;
+            outline: none;
+            border: 1px solid #d9dbda;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .maincontent .input_field .input:focus,
+        .maincontent .input_field .textarea:focus {
+            border-bottom: 2px solid #f5b581;
+
+        }
+
+        .maincontent .input_field_terms .agree {
+            font-size: 14px;
+            color: #757575;
+            display: inline-block;
+
+        }
+
+        .maincontent .input_field_terms .checkk {
+            width: 15px;
+            height: 15px;
+
+            cursor: pointer;
+        }
+
+        .maincontent .input_field_terms .checkk input[type="checkbox"] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+
+        }
+
+        .maincontent .input_field_terms .checkk .checkmark {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #fec107;
+            display: inline-block;
+            position: relative;
+        }
+
+        .maincontent .input_field_terms .checkk .checkmark:before {
+            content: "";
+            position: absolute;
+            top: 1px;
+            left: 2px;
+            width: 5px;
+            height: 2px;
+            border: 2px solid;
+            border-color: transparent transparent #fff #fff;
+            transform: rotate(-45deg);
+            display: none;
+
+        }
+
+        .maincontent .input_field_terms .checkk input[type="checkbox"]:checked~.checkmark {
+            background: #fec107;
+        }
+
+        .maincontent .input_field_terms .checkk input[type="checkbox"]:checked~.checkmark:before {
+            display: block;
+        }
+
+        .input_field .btn {
+            width: 123px;
+            margin-top: 35px;
+            padding: 8px 10px;
+            font-size: 15px;
+            border: 0;
+            background: #f19e04;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            outline: none;
+            display: inline-block;
+
+        }
+
+        .input_field .btnn {
+            width: 123px;
+            margin-top: 35px;
+            padding: 8px 10px;
+            font-size: 15px;
+            border: 0;
+            background: #5892fe;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            outline: none;
+
+        }
+
+        .input_field .btn:hover {
+            background: #e08c18;
+        }
+
+        .input_field .btnn:hover {
+            background: #52b029;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="personaldetails">
+        <div class="heading">
+            Personal details
+        </div>
+        <div class="maincontent">
+            <div class="input_field">
+                <label>First Name</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="input_field">
+                <label>Last Name</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="input_field">
+                <label>Email id </label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="input_field">
+                <label>Mobile No</label>
+                <input type="number" class="input">
+            </div>
+
+            <div class="input_field">
+                <label>Address</label>
+                <textarea class="input"></textarea>
+            </div>
+
+            <div class="input_field">
+                <label>Pincode</label>
+                <input type="number" class="input">
+            </div>
+
+            <div class="input_field_terms">
+                <label class="checkk">
+                    <input type="checkbox">
+                    <span class="checkmark">
+                    </span></label>
+                <div class="agree">Agreed to terms and consditions</div>
+            </div>
+            <div class="buttons">
+                <div class="input_field">
+                    <a href="sigin.html">
+                        <input type="submit" value="Previous" class="btn">
+                    </a>
+                </div>
+
+                <div class="input_field">
+                    <a href="">
+                        <input type="submit" value="Submit" class="btnn">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

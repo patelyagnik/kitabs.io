@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Book details details</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'montserrat', sans-serif;
+
+        }
+
+
+        body {
+            /* background: #ffffff; */
+            background-image: url("https://m.media-amazon.com/images/I/71u-sJhZIIL._AC_SX425_.jpg");
+            padding: 0px 10px;
+        }
+
+        .personaldetails {
+            max-width: 500px;
+            width: 100%;
+            background: #fff;
+            margin: 60px auto;
+            padding: 30px;
+            box-shadow: 1px 1px 2px rgba(130, 8, 8, 0.125);
+
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            text-align: center;
+            color: #251212;
+        }
+
+        .maincontent {
+            width: 100%;
+        }
+
+        .maincontent .input_field {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .maincontent .input_field label,
+        p {
+            width: 180px;
+            color: #757575;
+            margin-right: 18px;
+            font-size: 14px;
+
+        }
+
+        .pack{
+            width: 400px;
+        }
+
+        .maincontent .input_field .input {
+            resize: none;
+            width: 100%;
+            outline: none;
+            /* border: 1px solid #d5dbd9; */
+            border: 1px solid #d9dbda;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+
+        .maincontent .input_field .input:focus,
+        .maincontent .input_field .textarea:focus {
+            border-bottom: 2px solid #f5b581;
+
+        }
+
+        .input_field .btn {
+            width: 438px;
+            padding: 8px 10px;
+            font-size: 15px;
+            border: 0;
+            background: #5892fe;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 3px;
+            outline: none;
+        }
+
+        .input_field .btn:hover {
+            background: #52b029;
+        }
+
+        .input_photos {
+            display: flex;
+            margin-bottom: 15px;
+
+        }
+
+        .image {
+            padding-right: 35px;
+        }
+
+        .btn{
+            color: red;
+            background-color: white;
+            width: 50px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="personaldetails">
+        <div class="heading">
+            Book Details
+        </div>
+        <div class="maincontent">
+            <div class="input_field">
+                <label>Tittle of the book </label>
+                <input type="text" class="input" placeholder="" required>
+            </div>
+            
+            <div class="input_field">
+                <label>Category</label>
+                <input type="text" class="input" placeholder="">
+            </div>
+            
+            <div class="input_field">
+                <label>Condition</label>
+                <div class="pack">
+                    <input type="radio" id="html" name="fav_language" value="java">
+                      <label for="html">New</label>
+                    <input type="radio" id="html" name="fav_language" value="java">
+                      <label for="html">Readable</label>
+                    <input type="radio" id="html" name="fav_language" value="java">
+                      <label for="html">Old</label>
+                </div>
+            </div>
+            <div class="input_field">
+                <label>Book languge</label>
+                <input type="text" class="input" placeholder="">
+            </div>
+            
+            <div class="input_field">
+                <label>Publisher details</label>
+                <textarea class="input" placeholder=""></textarea>
+            </div>
+            
+            <div class="input_field">
+                <label>Description</label>
+                <textarea class="input"></textarea>
+            </div>
+            <div class="input_photos">
+                <p>Upload Book Image</p>
+                <div class="image">
+                    <input class="photo-upload" type="file" ochange="readURL(this)" accept="Image/*">
+                </div>
+            </div>
+            <div class="input_field">
+                <a href="sigin1.html">
+                    <input type="submit" value="Next" class="btn">
+                </a>
+            </div>
+            <div class="btn">
+                <a href="index.html">
+                    <button>Cancel</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

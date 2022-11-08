@@ -1,0 +1,245 @@
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important
+}
+
+.no-gutter>[class*=col-] {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.header-bg {
+    background-image: url(../../assets/frontend/pages/img/content-bg/header-bg.png);
+    background-repeat: repeat
+}
+
+.img-center {
+    margin: 0 auto
+}
+
+.dropdowndialog {
+    position: relative;
+    display: inline-block
+}
+
+.dropdown-contentdialog {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 660px;
+    overflow: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    z-index: 1
+}
+
+.dropdown-contentdialog a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block
+}
+
+.dropdowndialog a:hover,
+.dropdowndialog li:hover {
+    background-color: #f1f1f1
+}
+
+.showdialog {
+    display: block
+}
+
+@media (min-width:600px) {
+    .dropdowndialog ul {
+        -moz-column-count: 4;
+        -moz-column-gap: 10px;
+        -webkit-column-count: 4;
+        -webkit-column-gap: 10px;
+        column-count: 4;
+        column-gap: 10px
+    }
+}
+
+@media (max-width:599px) and (min-width:400px) {
+    .dropdowndialog ul {
+        -moz-column-count: 2;
+        -moz-column-gap: 5px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 5px;
+        column-count: 2;
+        column-gap: 4px
+    }
+}
+
+@media (max-width:399px) {
+    .dropdowndialog ul {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1
+    }
+}
+
+#overlay {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 2;
+    cursor: pointer
+}
+
+.loaderimg {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0
+}
+
+.text {
+    display: flex;
+    flex-direction: column
+}
+
+.mytext,
+.text-r {
+    display: inline-block
+}
+
+.text-r {
+    padding-left: 10px;
+    width: 100%;
+    padding-right: 28px
+}
+
+.mytext {
+    border: 0;
+    padding: 10px;
+    background: #f5f5f5;
+    width: 85%
+}
+
+@media screen and (max-width:480px) {
+    .mobile-cart {
+        width: unset !important;
+        top: -105px
+    }
+    .top-cart-content-wrapper {
+        right: 0 !important;
+        left: auto !important
+    }
+}
+
+.portlet {
+    padding-bottom: unset !important
+}
+
+.input-rounded {
+    border-radius: 20px !important
+}
+
+.bookchor-header-unfix {
+    position: relative !important;
+    z-index: -1
+}
+
+.borderless td,
+.borderless th,
+.borderless_cart {
+    border: none !important
+}
+
+.bkchr-mob-disabled {
+    background-color: #e94d1c !important
+}
+
+.sidenav {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: .5s;
+    z-index: 10000
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: .3s
+}
+
+.sidenav a:hover {
+    color: #f1f1f1
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px
+}
+
+.search-condition-style {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    border-right: 1px solid #d3d3d3
+}
+
+.caret-search {
+    position: absolute;
+    top: 11px;
+    left: 80%;
+    color: #000;
+    z-index: 2
+}
+
+.search-box {
+    padding-left: 60px !important
+}
+
+.select-box-condition {
+    font-size: 13px;
+    text-transform: unset;
+    padding-left: 13px;
+    background-color: #efefef;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none
+}
+
+.menu-options {
+    padding-left: 15px;
+    border-top: 1px solid;
+    padding-top: 10px
+}
+
+.caption>h2 {
+    text-transform: capitalize;
+}
+
+.carousel-control {
+    top: 182px !important;
+}
+
+.nobackground:hover {
+    color: #e94d1c;
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.nobackground {
+    background-color: transparent !important;
+}
+
+.fa-heart {
+    color: red
+}
